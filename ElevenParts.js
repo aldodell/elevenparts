@@ -5,7 +5,7 @@ class ElevenParts extends KDApplication {
         data.append("c", "a");
         let server = new KDServerBridge("security.php", data,
             function (m) {
-                kdKernel.sendLocalMessage(kdMessage("KDTerminal", m, "ElevenParts"));
+                kdKernel.sendLocalMessage(kdMessage("terminal", m, "ElevenParts"));
             }
 
         ).request();
@@ -28,7 +28,7 @@ class ElevenParts extends KDApplication {
     run() {
         if (super.run()) {
             let m;
-            m = kdMessage("KDTerminal", "take ElevenParts");
+            m = kdMessage("terminal", "take ElevenParts");
             kdKernel.sendLocalMessage(m);
         }
     }

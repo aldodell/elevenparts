@@ -1,5 +1,6 @@
 class ElevenPartsAdmin extends KDApplication {
 
+
     run() {
         if (super.run()) {
             this.show();
@@ -402,7 +403,7 @@ class ElevenPartsAdmin extends KDApplication {
                 })
                 .request();
         }
-        
+
         adm_win.publish();
         adm_cargarProductos();
 

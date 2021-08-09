@@ -1,6 +1,8 @@
 class ElevenPartsSite extends KDApplication {
 
+
     run() {
+
         if (super.run()) {
             this.show();
         }
@@ -360,7 +362,7 @@ class ElevenPartsSite extends KDApplication {
         }
 
         function abrirTerminal() {
-            kdKernel.sendLocalMessage(kdMessage("KDTerminal"));
+            kdKernel.sendLocalMessage(kdMessage("terminal"));
         }
     }
 }
