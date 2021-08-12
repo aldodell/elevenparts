@@ -12,10 +12,11 @@
     <script src="../KD2021/KD.js"></script>
     <script>
         kdKernel
-            .loadApplication("ElevenParts")
+            .setServerUrl("../KD2021/server.php")
+            //.loadApplication("ElevenParts")
             .loadApplication("ElevenPartsAdmin")
             .loadApplication("ElevenPartsSite", true);
 
-    </script>
+    </script>   
 
 </body>

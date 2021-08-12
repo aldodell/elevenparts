@@ -1,8 +1,6 @@
 class ElevenPartsSite extends KDApplication {
-
-
+    
     run() {
-
         if (super.run()) {
             this.show();
         }
@@ -93,7 +91,7 @@ class ElevenPartsSite extends KDApplication {
 
         var estiloImagenProducto = kdStyles(
             { height: 'auto' },
-            { width: '150px' },
+            { width: '200px' },
             { display: 'flex' },
             { backgroundColor: "yellow" }
         )

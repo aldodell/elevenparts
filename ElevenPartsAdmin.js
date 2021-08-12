@@ -1,9 +1,23 @@
 class ElevenPartsAdmin extends KDApplication {
+    constructor(params) {
+        super(params);
+        this.id = "ElevenPartsAdmin";
+    }
 
+
+    processMessage(message) {
+        if (message.destination == this.id) {
+            this.run();
+        }
+    }
 
     run() {
-        if (super.run()) {
-            this.show();
+        if (super.requestAuthorization()) {
+            if (super.run()) {
+                this.show();
+            }
+        } else {
+            alert("No tiene autorizacion para abrir esta aplicacion");
         }
     }
 
